@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"os"
 	"os/signal"
@@ -9,14 +10,27 @@ import (
 
 	"todo/model"
 	"todo/transport"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
+const (
+	userName = "trungnt"
+	password = "trungnt"
+	dbName   = "notes"
+)
+
 func main() {
 	//Init database using gorm
-	db, err := gorm.Open("mysql", "root:root@/notes?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open(
+		"mysql",
+		fmt.Sprintf("%s:%s@/%s?charset=utf8mb4&parseTime=True&loc=Local",
+			userName,
+			password,
+			dbName,
+		))
 	if err != nil {
 		panic(err)
 	}
