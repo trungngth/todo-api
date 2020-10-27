@@ -2,7 +2,7 @@ package storage
 
 import (
 	//"../helper"
-	"../model"
+	"todo/model"
 	"github.com/jinzhu/gorm"
 )
 

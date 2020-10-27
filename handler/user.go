@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"../model"
-	"../storage"
+	"todo/model"
+	"todo/storage"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"

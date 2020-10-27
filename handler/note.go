@@ -3,8 +3,9 @@ package handler
 import (
 	"strconv"
 
-	"../model"
-	"../storage"
+	"todo/model"
+
+	"todo/storage"
 
 	"github.com/gin-gonic/gin"
 )

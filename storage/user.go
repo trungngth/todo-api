@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"../model"
+	"todo/model"
 	"github.com/jinzhu/gorm"
 )
 

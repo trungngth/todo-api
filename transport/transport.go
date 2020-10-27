@@ -1,8 +1,8 @@
 package transport
 
 import (
-	"../handler"
-	"../storage"
+	"todo/handler"
+	"todo/storage"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 )
